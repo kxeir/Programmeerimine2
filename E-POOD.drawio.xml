@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="3f4-vE6Cy01sxy5kTxzB">
+    <mxGraphModel dx="1417" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="92jc_HutSDGU237leiKV-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;" value="" vertex="1">
+          <mxGeometry height="850" width="1100" x="-125" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#999999;gradientColor=none;strokeColor=#666666;" value="&lt;h1&gt;&lt;font style=&quot;font-size: 31px;&quot;&gt;KEIRI E-POOD&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="320" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Category" vertex="1">
+          <mxGeometry height="78" width="280" x="290" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-5" parent="92jc_HutSDGU237leiKV-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- name: String" vertex="1">
+          <mxGeometry height="26" width="280" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-7" parent="92jc_HutSDGU237leiKV-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: long" vertex="1">
+          <mxGeometry height="26" width="280" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Product" vertex="1">
+          <mxGeometry height="194" width="190" x="335" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-9" parent="92jc_HutSDGU237leiKV-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: long" vertex="1">
+          <mxGeometry height="26" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-14" parent="92jc_HutSDGU237leiKV-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- categoryId: long" vertex="1">
+          <mxGeometry height="26" width="190" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-15" parent="92jc_HutSDGU237leiKV-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- name: String" vertex="1">
+          <mxGeometry height="26" width="190" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-10" parent="92jc_HutSDGU237leiKV-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- explanation: String" vertex="1">
+          <mxGeometry height="26" width="190" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-11" parent="92jc_HutSDGU237leiKV-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- fotoUrl: String" vertex="1">
+          <mxGeometry height="32" width="190" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-24" parent="92jc_HutSDGU237leiKV-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- price: BigDecimal" vertex="1">
+          <mxGeometry height="32" width="190" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-25" edge="1" parent="1" source="92jc_HutSDGU237leiKV-8" style="endArrow=none;html=1;rounded=0;entryX=0.497;entryY=0.932;entryDx=0;entryDy=0;entryPerimeter=0;" target="92jc_HutSDGU237leiKV-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="250" as="sourcePoint" />
+            <mxPoint x="430" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-26" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Order" vertex="1">
+          <mxGeometry height="162" width="190" x="170" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-27" parent="92jc_HutSDGU237leiKV-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: long" vertex="1">
+          <mxGeometry height="26" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-28" parent="92jc_HutSDGU237leiKV-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- clientName: String" vertex="1">
+          <mxGeometry height="26" width="190" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-29" parent="92jc_HutSDGU237leiKV-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- clientEmail: String" vertex="1">
+          <mxGeometry height="26" width="190" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-30" parent="92jc_HutSDGU237leiKV-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- createTime: LocalDateTime" vertex="1">
+          <mxGeometry height="26" width="190" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-31" parent="92jc_HutSDGU237leiKV-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- status: String" vertex="1">
+          <mxGeometry height="32" width="190" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-34" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="OrderInfo" vertex="1">
+          <mxGeometry height="156" width="190" x="470" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-35" parent="92jc_HutSDGU237leiKV-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: long" vertex="1">
+          <mxGeometry height="26" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-40" parent="92jc_HutSDGU237leiKV-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- orderId: long" vertex="1">
+          <mxGeometry height="26" width="190" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-41" parent="92jc_HutSDGU237leiKV-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- productId: long" vertex="1">
+          <mxGeometry height="26" width="190" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-42" parent="92jc_HutSDGU237leiKV-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- priceNow: BigDecimal" vertex="1">
+          <mxGeometry height="26" width="190" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-43" parent="92jc_HutSDGU237leiKV-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- quantity: int" vertex="1">
+          <mxGeometry height="26" width="190" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-44" edge="1" parent="1" source="92jc_HutSDGU237leiKV-24" style="endArrow=none;html=1;rounded=0;entryX=0.541;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.481;exitY=0.906;exitDx=0;exitDy=0;exitPerimeter=0;" target="92jc_HutSDGU237leiKV-34" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="500" as="sourcePoint" />
+            <mxPoint x="580" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92jc_HutSDGU237leiKV-45" edge="1" parent="1" source="92jc_HutSDGU237leiKV-26" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="92jc_HutSDGU237leiKV-34" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="690" as="sourcePoint" />
+            <mxPoint x="400" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JZpqM-O_zuTk6YPdGWqG-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="JZpqM-O_zuTk6YPdGWqG-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;*&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="JZpqM-O_zuTk6YPdGWqG-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;1..*&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="JZpqM-O_zuTk6YPdGWqG-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="JZpqM-O_zuTk6YPdGWqG-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;*&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="JZpqM-O_zuTk6YPdGWqG-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="405" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
