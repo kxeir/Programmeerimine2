@@ -34,3 +34,6 @@
 - `Total`: Kogusumma
 - `ProductId`: Viide tootele (`Product.Id`)
 - `OrderId`: Viide tellimusele (`Order.Id`)
+
+
+<img width="852" height="1102" alt="epood drawio" src="https://github.com/user-attachments/assets/27c5c49b-6590-4436-9981-b85b147b06a9" />
