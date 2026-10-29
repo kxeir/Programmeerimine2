@@ -48,7 +48,7 @@ namespace KooliProjekt.WebAPI
                 SeedData.Generate(dbContext);
             }
 
-            // Configure the HTTP request pipeline.
+           
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

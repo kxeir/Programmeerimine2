@@ -11,6 +11,16 @@
             Value = value;
         }        
 
+        public static OperationResult<T> Success(T value)
+        {
+            return new OperationResult<T>(value);
+        }
+
+        public static OperationResult<T> NotFound(string error = "The requested resource was not found.")
+        {
+            return new OperationResult<T>().AddError(error);
+        }
+
         public new OperationResult<T> AddError(string error)
         {
             base.AddError(error);
