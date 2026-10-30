@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+
 namespace KooliProjekt.WebAPI.Controllers;
 
 public class ProductsController : ApiControllerBase
@@ -48,6 +49,25 @@ public class ProductsController : ApiControllerBase
             return NotFound();
         }
 
+        return Result(result);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Save([FromBody] SaveProductCommand command)
+    {
+        var result = await _mediator.Send(command);
+        return Result(result);
+    }
+
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        if (id <= 0)
+        {
+            return NotFound();
+        }
+
+        var result = await _mediator.Send(new deleteproductCommand { Id = id });
         return Result(result);
     }
 }
