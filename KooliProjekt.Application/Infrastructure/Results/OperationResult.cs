@@ -16,6 +16,8 @@ namespace KooliProjekt.Application.Infrastructure.Results
             }
         }
 
+        public bool Succeeded => !HasErrors;
+
         public bool ShouldSerializeHasErrors()
         {
             return HasErrors;

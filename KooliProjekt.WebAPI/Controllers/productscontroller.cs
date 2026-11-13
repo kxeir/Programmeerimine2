@@ -59,6 +59,60 @@ public class ProductsController : ApiControllerBase
         return Result(result);
     }
 
+    [HttpPost("{id:int}/files")]
+    public async Task<IActionResult> AddFile(int id, [FromForm] AddFileCommand command)
+    {
+        command.ProductId = id;
+        var result = await _mediator.Send(command);
+
+        if (!result.Succeeded)
+        {
+            return BadRequest(result.Errors);
+        }
+
+        return Ok();
+    }
+
+    [HttpGet("{id:int}/files")]
+    public async Task<IActionResult> ListFiles(int id)
+    {
+        var result = await _mediator.Send(new ListFilesQuery
+        {
+            ProductId = id
+        });
+
+        return Result(result);
+    }
+
+    [HttpGet("{id:int}/files/{fileName}")]
+    public async Task<IActionResult> GetFile(int id, string fileName)
+    {
+        var result = await _mediator.Send(new GetFileQuery
+        {
+            ProductId = id,
+            FileName = fileName
+        });
+
+        if (result is null || result.HasErrors || result.Value is null)
+        {
+            return NotFound();
+        }
+
+        return File(result.Value.Content, result.Value.ContentType, result.Value.FileName);
+    }
+
+    [HttpDelete("{id:int}/files/{fileName}")]
+    public async Task<IActionResult> DeleteFile(int id, string fileName)
+    {
+        var result = await _mediator.Send(new DeleteFileCommand
+        {
+            ProductId = id,
+            FileName = fileName
+        });
+
+        return Result(result);
+    }
+
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> Delete(int id)
     {

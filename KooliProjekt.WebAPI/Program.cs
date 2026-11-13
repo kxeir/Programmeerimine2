@@ -1,11 +1,13 @@
 using FluentValidation;
 using KooliProjekt.Application.Behaviors;
 using KooliProjekt.Application.Data;
+using KooliProjekt.Application.Infrastructure.Files;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.IO;
 
 namespace KooliProjekt.WebAPI
 {
@@ -14,15 +16,12 @@ namespace KooliProjekt.WebAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-            // Add services to the container.
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            {
-                options.UseSqlServer(connectionString);
-            });
+            builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+            builder.Services.AddScoped<IFileClient>(_ => new LocalFileClient(
+                Path.Combine(builder.Environment.ContentRootPath, builder.Configuration["FilesRoot"] ?? "App_Data/Files")));
+            builder.Services.AddScoped<FileStore>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -48,7 +47,6 @@ namespace KooliProjekt.WebAPI
                 SeedData.Generate(dbContext);
             }
 
-           
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
