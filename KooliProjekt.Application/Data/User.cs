@@ -33,8 +33,10 @@ namespace KooliProjekt.Application.Data {
         public string UserName { get; set; } = string.Empty;
 
         [Required]
-        [StringLength(30, MinimumLength = 6)]
+        [StringLength(200, MinimumLength = 6)]
         public string password { get; set; } = string.Empty;
+
+        public bool IsAdmin { get; set; }
 
         public ICollection<Order> orders { get; set; } = new List<Order>();
 

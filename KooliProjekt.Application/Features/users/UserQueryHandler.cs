@@ -40,7 +40,8 @@ public class UserQueryHandler : IRequestHandler<UserQuery, OperationResult<UserD
                 Email = u.email,
                 PhoneNumber = u.phoneNumber,
                 Address = u.address,
-                UserName = u.UserName
+                UserName = u.UserName,
+                IsAdmin = u.IsAdmin
             })
             .FirstOrDefaultAsync(cancellationToken);
 

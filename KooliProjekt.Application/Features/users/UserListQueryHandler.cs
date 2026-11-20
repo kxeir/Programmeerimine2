@@ -41,7 +41,8 @@ public class UserListQueryHandler : IRequestHandler<UserListQuery, OperationResu
                 Email = u.email,
                 PhoneNumber = u.phoneNumber,
                 Address = u.address,
-                UserName = u.UserName
+                UserName = u.UserName,
+                IsAdmin = u.IsAdmin
             })
             .ToListAsync(cancellationToken);
 

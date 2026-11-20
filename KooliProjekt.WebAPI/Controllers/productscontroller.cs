@@ -1,5 +1,6 @@
 ﻿using KooliProjekt.Application.Features.products;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -53,6 +54,7 @@ public class ProductsController : ApiControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Save([FromBody] SaveProductCommand command)
     {
         var result = await _mediator.Send(command);
@@ -60,6 +62,7 @@ public class ProductsController : ApiControllerBase
     }
 
     [HttpPost("{id:int}/files")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> AddFile(int id, [FromForm] AddFileCommand command)
     {
         command.ProductId = id;
@@ -102,6 +105,7 @@ public class ProductsController : ApiControllerBase
     }
 
     [HttpDelete("{id:int}/files/{fileName}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteFile(int id, string fileName)
     {
         var result = await _mediator.Send(new DeleteFileCommand
@@ -114,6 +118,7 @@ public class ProductsController : ApiControllerBase
     }
 
     [HttpDelete("{id:int}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int id)
     {
         if (id <= 0)

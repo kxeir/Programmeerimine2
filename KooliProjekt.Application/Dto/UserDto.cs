@@ -9,4 +9,5 @@ public class UserDto
     public string PhoneNumber { get; set; } = string.Empty;
     public string Address { get; set; } = string.Empty;
     public string UserName { get; set; } = string.Empty;
+    public bool IsAdmin { get; set; }
 }

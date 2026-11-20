@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using KooliProjekt.Application.Authentication;
 
 namespace KooliProjekt.Application.Data
 {
@@ -27,12 +28,13 @@ namespace KooliProjekt.Application.Data
             for (int i = 1; i <= 35; i++)
             {
                 User kasutaja = new User();
-                kasutaja.firsName = "Eesnimi" + i;
-                kasutaja.lastName = "Perenimi" + i;
-                kasutaja.email = "kasutaja" + i + "@example.com";
+                kasutaja.firsName = "keir" + i;
+                kasutaja.lastName = "kleitsmann" + i;
+                kasutaja.email = "keirkleitsmann" + i + "@example.com";
                 kasutaja.phoneNumber = "555000" + i;
-                kasutaja.UserName = "kasutaja" + i;
-                kasutaja.password = "Parool123";
+                kasutaja.UserName = "keir" + i;
+                kasutaja.password = PasswordHelper.Hash("1234");
+                kasutaja.IsAdmin = i == 1;
 
                 kasutajad.Add(kasutaja);
             }
