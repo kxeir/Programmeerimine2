@@ -1,0 +1,7 @@
+# Use this workspace to collaborate
+workspace:
+  id: a63c1315-58b8-4bba-8e88-db1d14b9037b
+
+localResources:
+  specs:
+    - ../KooliProjekt.WebAPI/obj/Debug/net10.0/EndpointInfo/KooliProjekt.WebAPI.json
